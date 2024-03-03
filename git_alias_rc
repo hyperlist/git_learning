@@ -1,0 +1,22 @@
+
+alias gcl='git clone'                           # 从远端下载代码 - gcl xxx.git
+alias gs='git status'                           # 当前修改状态 - gs
+alias gsh='git stash'                           # 暂存当前修改 - gsh
+alias gshp='git stash pop'                      # 恢复暂存修改 - gshp
+alias gpr='git pull origin master --rebase'     # 同步master分支，并更新commit信息 - gpr
+alias gpull='git pull origin master'            # 同步master分支 - gpull
+alias gp='git push'                             # 提交当前分支代码至远端 - gp
+alias gpf='git push -f'                         # 强制提交当前分支代码至远端 - gpf
+alias ga='git add'                              # 添加需提交的文件 - gpf
+alias gcm='git commit -m'                       # 给待提交文件写说明，并创建新的commit_id - gcm ; # 输入提交信息
+alias gcma='git commit --amend'                 # 强制覆盖上一次commit - gcma ; # 会进入vi界面，可以编辑上一次提交说明，w保存，q退出
+alias gc='git checkout'                         # 1. 创建新的本地分支 - gc -b new_branch_name
+                                                # 2. 切换现有分支 - gc some_branch_name
+                                                # 3. 撤销文件变更 - gc xxx.cpp xx.go
+alias glog='git log'                            # 查看文件commit历史 - glog
+alias gdiff='git diff --name-only HEAD^ HEAD'   # 查看上一次提交修改的文件 - gdiff
+alias grsf='git reset HEAD^'                    # 回退上一次commit, 不修改文件 - grsf
+alias grs='git reset --hard'                    # 清空当前分支所有修改，强行同步新分支 - grs origin/master
+alias gb='git branch -l'                        # 查看本地所有分支 - gb
+alias gbd='git branch -D '                      # 删除本地分支 - gbd delete_branch_name;
+                                                # 删除远端分支 - git push origin :delete_branch_name
